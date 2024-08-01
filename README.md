@@ -54,10 +54,10 @@ This project is intended to showcase our knowledge learning about Neural Network
 
 
 # Tools Used / Development Environment
-- Python
+- C
 - VS Code
 - Terminal
-- Windows 10
+- Linux
 
 
 
