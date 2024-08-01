@@ -4,13 +4,13 @@
 <h1 align="center">Threading in C</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/mitchellkolb/GIT-REPO?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/mitchellkolb/threading-in-C?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/mitchellkolb/GIT-REPO?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/mitchellkolb/threading-in-C?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/mitchellkolb/GIT-REPO?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/mitchellkolb/threading-in-C?color=56BEB8">
 
-  <img alt="Github stars" src="https://img.shields.io/github/stars/mitchellkolb/GIT-REPO?color=56BEB8" />
+  <img alt="Github stars" src="https://img.shields.io/github/stars/mitchellkolb/threading-in-C?color=56BEB8" />
 </p>
 
 <p align="center">
