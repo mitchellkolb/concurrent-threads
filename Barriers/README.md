@@ -1,0 +1,2 @@
+# Lab3
+Your goal is to modify the program so you can perform Gauss Elimination by using less threads than there are rows. This is because you won't have 1000 threads for an 1000x1000 matrix. Well, chances are you won't :)!
