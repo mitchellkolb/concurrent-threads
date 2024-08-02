@@ -1,7 +1,7 @@
 
 
 
-<h1 align="center">Threading in C</h1>
+<h1 align="center">Multi-threading in C</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/mitchellkolb/threading-in-C?color=01518D">
