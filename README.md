@@ -22,7 +22,9 @@
     alt="Website Badge" />
 </p>
 
-This project is intended to showcase our knowledge learning about Neural Network Design by developing a
+I explored the pthread.h library in C to solve math problems with multi-threading. I showcase the effective use of threads, mutexes, and barriers to handle complex mathematical computations and ensure race condition-free operations.  
+
+
 
 ![project image](resources/image1.png)
 
@@ -77,7 +79,7 @@ This project was implemented on my local machine inside of a virtual machine usi
 > [!NOTE]
 > I had to use this version of Ubuntu but it is not required to run this codebase. 
 - Clone this repository 
-- Open terminal at the codebase `~.../threading-in-C/Barriers/` or `~.../threading-in-C/Mutexes/`
+- Open terminal at the codebase `~.../multi-threading-in-C/Barriers/` or `~.../multi-threading-in-C/Mutexes/`
 - Run my `mk` file to compile the codebase and run the a.out executable.
 
 
