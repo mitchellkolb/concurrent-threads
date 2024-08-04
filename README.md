@@ -44,6 +44,11 @@ I explored the pthread.h library in C to solve math problems with multi-threadin
 - [Team / Contributors / Teachers](#team--contributors--teachers)
 - [How to Set Up](#how-to-set-up)
 - [Project Overview](#project-overview)
+  - [Introduction](#introduction)
+  - [Mutex](#mutex)
+  - [Barriers](#barriers)
+  - [Results and Observations](#results-and-observations)
+  - [Future Work](#future-work)
 - [References](#references)
 - [Acknowledgments](#acknowledgments)
 
@@ -95,48 +100,25 @@ This project was implemented on my local machine inside of a virtual machine usi
 
 
 # Project Overview
-This project utilizes 
+While learning about thread management in C, I worked on a project that involved using the pthreads library to solve math problems. This project focuses on two main problems: computing the sum of matrix elements using threads and solving a system of linear equations with Gauss elimination using concurrent threads.
 
+## Introduction
+In this project, I applied multithreading techniques using the pthread.h library in C to solve computational problems efficiently. These tasks helped me understand the principles of parallel computing and concurrent programming, particularly the differences between parallelism and concurrency. Parallelism involves executing multiple tasks simultaneously in real time, typically on systems with multiple processing elements like multiprocessor or multicore systems. Each task runs on a separate processor, allowing true simultaneous execution. Concurrency, on the other hand, involves executing tasks logically in parallel. On single CPU systems, tasks take turns executing, giving the illusion of simultaneous execution through multitasking. 
 
+## Mutex
+The first task I worked on involved computing the sum of all elements in an 8x8 matrix of integers using threads. Each thread was responsible for computing the partial sum of a unique row. Each thread computes the partial sum of its assigned row and then waits for all other threads to finish. Once all threads have completed their tasks, the main thread computes the final sum by adding all the partial sums. To make sure I had thread-safe access to the shared global sum variable, I used a mutex. By using a mutex, I avoided race conditions and ensured that only one thread could update the global total at any time. This task emphasized the importance of thread synchronization when dealing with shared resources and introduced me to concepts like critical regions and deadlock prevention.
 
-## Project Details
+## Barriers
+The other task involved solving a system of linear equations using Gauss elimination with concurrent threads. The Gauss elimination algorithm consists of row reduction and back substitution. While the specifics of gauss elimination and back subsitiion are complicated and math based the main idea of this is that their are lots of repeated steps where some threads complete their computation faster than others. But to move onto the next set of steps each thread needs the results of every other thread so I need a way of syncing all the threads together. I used barriers to synchronize threads at different phases of the algorithm, ensuring all threads completed the current step before moving on to the next. This included steps like partial pivoting, reducing the matrix, and back substitution. This task highlighted the use of barriers as a synchronization mechanism to coordinate the progress of multiple threads.
 
-### Introduction
-In this project, we apply 
+## Results and Observations
+During development, I observed several key points. The use of mutexes was crucial in preventing race conditions and ensuring correct updates to shared variables. Barriers effectively synchronized threads, allowing them to perform complex operations like Gauss elimination concurrently. These multithreading techniques significantly improved the efficiency of solving computational problems, especially when threads operated independently within their assigned tasks. Additionally, I learned about the advantages and disadvantages of threads compared to processes, and the importance of thread management functions like pthread_create, pthread_join, and pthread_exit.
 
-
-### Literature Review
-In this we drew inspiration from various sources, including video tutorials online for 
-
-
-### Technical Plan
-The project employs a 
-
-
-### Implementation Details
-
-#### Files and Structure
-- `game.py`: Contains the racing game environment and controls the car's movement.
-> [!NOTE]
-> These files were 
-
-
-### Implementation
-In this project
-
-#### Results and Observations
-During development,
-<p float="left">
-  <img src="resources/image1.png" alt="First Try" width="300" />
-  <img src="resources/image2.png" alt="Final Try" width="307" />
-</p>
-
-#### Future Work
-Future improvements could include
-
-
+## Future Work
+Future improvements could include optimizing thread management to further reduce execution time and exploring advanced synchronization mechanisms such as condition variables and semaphores. Semaphores, in particular, offer advantages over condition variables by including a counter, making them more general and flexible for certain types of thread cooperation. Additionally, extending the implementation to larger matrices and more complex systems of equations could provide more information into the efficiency of multithreading in computational problems.
 
 ## References
+The assignment is described on chapter 4 of the [Systems Programming Book](https://link.springer.com/book/10.1007/978-3-319-92429-8).
 
 
 
