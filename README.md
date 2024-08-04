@@ -49,9 +49,16 @@ I explored the pthread.h library in C to solve math problems with multi-threadin
 
 ---
 
+
+
+
 # What I Learned in this Project
-- How to
-- Programming in 
+- Main ideas around Parallel Computing and Concurrent Programming. (Parallelism vs Concurrency)
+- Principles of threads and their advantages/disadvantages over processes.
+- Threads synchronization tools like mutex locks, join, condition variables and barriers. 
+- Thread management terms like race condition, critical region, and deadlocks.
+- Semaphores and their advantages over condition variables.
+
 
 
 
@@ -59,6 +66,7 @@ I explored the pthread.h library in C to solve math problems with multi-threadin
 - C
 - VS Code
 - Terminal
+- Ubuntu
 - Linux
 
 
@@ -134,5 +142,5 @@ Future improvements could include
 
 --- 
 # Acknowledgments
-This codebase and all supporting materials was made as apart of a course for my undergrad at WSU for CPTS XXX - XXX in the Spring of 2022. 
+This codebase and all supporting materials was made as apart of a course for my undergrad at WSU for CPTS 360 - Systems Programming C/C++ in the Spring of 2023. 
 
