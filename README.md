@@ -22,7 +22,7 @@
     alt="Website Badge" />
 </p>
 
-I explored the pthread.h library in C to solve math problems with multi-threading. I showcase the effective use of threads, mutexes, and barriers to handle complex mathematical computations and ensure race condition-free operations.  
+I explored the pthread.h library in C to solve math problems with multi-threading. I wanted to see how I can use threads, mutexes, and barriers to handle complex mathematical computations and ensure race condition-free operations.  
 
 
 
@@ -60,7 +60,7 @@ I explored the pthread.h library in C to solve math problems with multi-threadin
 # What I Learned in this Project
 - Main ideas around Parallel Computing and Concurrent Programming. (Parallelism vs Concurrency)
 - Principles of threads and their advantages/disadvantages over processes.
-- Threads synchronization tools like mutex locks, join, condition variables and barriers. 
+- Thread synchronization tools like mutex locks, join, condition variables and barriers. 
 - Thread management terms like race condition, critical region, and deadlocks.
 - Semaphores and their advantages over condition variables.
 
@@ -100,10 +100,10 @@ This project was implemented on my local machine inside of a virtual machine usi
 
 
 # Project Overview
-While learning about thread management in C, I worked on a project that involved using the pthreads library to solve math problems. This project focuses on two main problems: computing the sum of matrix elements using threads and solving a system of linear equations with Gauss elimination using concurrent threads.
+While learning about thread management in C, I worked on a project that involved using the pthreads library to solve math problems. This project focuses on two main problems: calculating the sum of matrix elements using threads and solving a system of linear equations with Gauss elimination using concurrent threads.
 
 ## Introduction
-In this project, I applied multithreading techniques using the pthread.h library in C to solve computational problems efficiently. These tasks helped me understand the principles of parallel computing and concurrent programming, particularly the differences between parallelism and concurrency. Parallelism involves executing multiple tasks simultaneously in real time, typically on systems with multiple processing elements like multiprocessor or multicore systems. Each task runs on a separate processor, allowing true simultaneous execution. Concurrency, on the other hand, involves executing tasks logically in parallel. On single CPU systems, tasks take turns executing, giving the illusion of simultaneous execution through multitasking. 
+In this project, I applied multithreading techniques using the pthread.h library in C to solve math problems efficiently. These tasks helped me understand the principles of parallel computing and concurrent programming, particularly the differences between parallelism and concurrency. Parallelism involves executing multiple tasks simultaneously in real time, typically on systems with multiple processing elements like multiprocessor or multicore systems. Each task runs on a separate processor core, allowing true simultaneous execution. Concurrency, on the other hand, involves executing tasks logically in parallel. On single CPU systems, tasks take turns executing, giving the illusion of simultaneous execution through multitasking. 
 
 ## Mutex
 The first task I worked on involved computing the sum of all elements in an 8x8 matrix of integers using threads. Each thread was responsible for computing the partial sum of a unique row. Each thread computes the partial sum of its assigned row and then waits for all other threads to finish. Once all threads have completed their tasks, the main thread computes the final sum by adding all the partial sums. To make sure I had thread-safe access to the shared global sum variable, I used a mutex. By using a mutex, I avoided race conditions and ensured that only one thread could update the global total at any time. This task emphasized the importance of thread synchronization when dealing with shared resources and introduced me to concepts like critical regions and deadlock prevention.
