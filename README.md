@@ -26,7 +26,7 @@ I explored the pthread.h library in C to solve math problems with multi-threadin
 
 
 
-![project image](resources/image1.png)
+![project image](resources/mult-threading-gif.gif)
 
 <details>
 <summary style="color:#5087dd">Watch the Full Video Demo Here</summary>
