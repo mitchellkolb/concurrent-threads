@@ -31,7 +31,7 @@ I explored the pthread.h library in C to solve math problems with multi-threadin
 <details>
 <summary style="color:#5087dd">Watch the Full Video Demo Here</summary>
 
-[![Full Video Demo Here](https://img.youtube.com/vi/VidKEY/0.jpg)](https://www.youtube.com/watch?v=VidKEY)
+[![Full Video Demo Here](https://img.youtube.com/vi/7tln4s4ttao/0.jpg)](https://www.youtube.com/watch?v=7tln4s4ttao)
 
 </details>
 
